@@ -124,6 +124,7 @@ public class ClientHandler implements Runnable {
 
     private void printHelp() {
         out.println(fmtServer("¡Bienvenido " + BOLD + username + RESET + "! Comandos:"));
+        out.println(GRAY + "   " + RESET + BOLD + "/connect <IP> <PORT>" + RESET + "   (para cambiar de conexión)");
         out.println(GRAY + "   " + RESET + BOLD + "change-username <nuevo>" + RESET + "   (alias: /nick <nuevo>)");
         out.println(GRAY + "   " + RESET + BOLD + "send-msg <usuario> <mensaje>" + RESET + "   (alias: /w <usuario> <mensaje>)");
         out.println(GRAY + "   " + RESET + BOLD + "global-msg <mensaje>" + RESET + "   (o escribe el mensaje directamente)");
